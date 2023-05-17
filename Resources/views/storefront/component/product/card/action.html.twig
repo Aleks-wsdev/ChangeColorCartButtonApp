@@ -1,0 +1,14 @@
+{% sw_extends '@Storefront/storefront/component/product/card/action.html.twig' %}
+{% set btnColor = config('ChangeColorCartButtonApp.config.color') %}
+
+{% block page_product_detail_product_buy_button %}
+	{% if btnColor %}
+		<div class="d-grid">
+			<button class="btn btn-buy" style="background-color: {{btnColor}} " title="{{ "listing.boxAddProduct"|trans|striptags }}">
+				{{ "listing.boxAddProduct"|trans|sw_sanitize }}
+			</button>
+		</div>
+	{% else %}
+		{{ parent() }}
+	{% endif %}
+{% endblock %}

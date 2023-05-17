@@ -1,0 +1,14 @@
+{% sw_extends '@Storefront/storefront/component/buy-widget/buy-widget-form.html.twig' %}
+{% set btnColor = config('ChangeColorCartButtonApp.config.color') %}
+
+{% block buy_widget_buy_button %}
+	{% if btnColor %}
+		<div class="d-grid">
+			<button class="btn btn-primary btn-buy" style="background-color: {{btnColor}}" title="{{ "detail.addProduct"|trans|striptags }}" aria-label="{{ "detail.addProduct"|trans|striptags }}">
+				{{ "detail.addProduct"|trans|sw_sanitize }}
+			</button>
+		</div>
+	{% else %}
+		{{ parent() }}
+	{% endif %}
+{% endblock %}

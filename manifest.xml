@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/trunk/src/Core/Framework/App/Manifest/Schema/manifest-2.0.xsd">
+    <meta>
+        <name>ChangeColorCartButtonApp</name>
+        <label>Change Color Cart Button App</label>
+        <description>App for Shopware 6 that changes the color of the 'Add to Cart' button</description>
+        <author>Aleks-wsdev</author>
+        <copyright>(c) by Aleks-wsdev</copyright>
+        <version>1.0.0</version>
+        <icon>Resources/config/plugin.png</icon>
+        <license>MIT</license>
+    </meta>
+</manifest>
